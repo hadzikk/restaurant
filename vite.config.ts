@@ -7,7 +7,9 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"), 
-      "@shared": path.resolve(__dirname, "./src/shared"), 
+      "@shared": path.resolve(__dirname, "./src/shared"),
+      "@utils": path.resolve(__dirname, "./src/shared/utils"),
+      "@libs": path.resolve(__dirname, "./src/shared/libs"), 
       "@menu": path.resolve(__dirname, "./src/modules/menu"),
       "@table": path.resolve(__dirname, "./src/modules/table"),
     },
