@@ -1,5 +1,6 @@
 import useMenu  from "../../hooks/useMenu"
 import MenuCard from "../MenuCard/MenuCard"
+import Cart from "@shared/components/Cart/Cart"
 import styles from "./MenuPage.module.css"
 
 const MenuPage = () => {
@@ -7,6 +8,7 @@ const MenuPage = () => {
 
     return (
         <section className={styles.root}>
+            <Cart />
             <div className={styles.menu}>
                 {menus.map((menu) => (
                     <MenuCard 

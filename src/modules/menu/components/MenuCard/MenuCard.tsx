@@ -1,4 +1,5 @@
 import { elipsisOnMiddle } from "@utils/elipsis"
+import { toRupiah } from "@utils/currency"
 import styles from "./MenuCard.module.css"
 
 const MenuCard = ({ menu }) => {
@@ -11,7 +12,7 @@ const MenuCard = ({ menu }) => {
         />
         <div className={styles.description}>
             <p className={styles.name}>{elipsisOnMiddle(menu.name, 7, 10)}</p>
-            <p className={styles.price}>{menu.price}</p>
+            <p className={styles.price}>{toRupiah(menu.price)}</p>
             <button className={styles.buy}>buy</button>
         </div>
     </div>
