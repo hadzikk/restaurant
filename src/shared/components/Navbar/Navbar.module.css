@@ -1,0 +1,144 @@
+.root {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    height: var(--navbar-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.25rem;
+    background-color: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.brand {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.link {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.8125rem;
+    color: var(--color-text-muted);
+    border-radius: var(--radius-sm);
+    transition: color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.link:hover {
+    color: var(--color-text);
+    background-color: var(--color-bg);
+}
+
+.linkActive {
+    color: var(--color-text);
+    background-color: var(--color-bg);
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cartButton {
+    position: relative;
+    padding: 0.375rem 0.75rem;
+    font-size: 0.8125rem;
+    color: var(--color-text);
+    background-color: transparent;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+}
+
+.badge {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    min-width: 1rem;
+    height: 1rem;
+    padding: 0 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.625rem;
+    font-weight: 600;
+    color: var(--color-surface);
+    background-color: var(--color-text);
+    border-radius: var(--radius-lg);
+}
+
+.profile {
+    position: relative;
+}
+
+.profileButton {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8125rem;
+    color: var(--color-text);
+    background-color: transparent;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+}
+
+.avatar {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    color: var(--color-surface);
+    background-color: var(--color-text);
+    border-radius: var(--radius-sm);
+}
+
+.dropdown {
+    position: absolute;
+    top: calc(100% + 0.375rem);
+    right: 0;
+    min-width: 180px;
+    padding: 0.375rem;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+}
+
+.dropdownName {
+    padding: 0.5rem 0.625rem;
+    font-size: 0.8125rem;
+    font-weight: 500;
+}
+
+.dropdownRole {
+    padding: 0 0.625rem 0.5rem;
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    text-transform: capitalize;
+}
+
+.dropdownAction {
+    width: 100%;
+    padding: 0.5rem 0.625rem;
+    font-size: 0.8125rem;
+    text-align: left;
+    color: var(--color-text);
+    background-color: transparent;
+    border: none;
+    border-radius: var(--radius-sm);
+}
+
+.dropdownAction:hover {
+    background-color: var(--color-bg);
+}

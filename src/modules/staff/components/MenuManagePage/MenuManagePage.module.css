@@ -1,0 +1,167 @@
+.root {
+    padding: 1.25rem;
+}
+
+.header {
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.addButton {
+    padding: 0.5rem 1rem;
+    font-size: 0.8125rem;
+    color: var(--color-surface);
+    background-color: var(--color-text);
+    border: none;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+}
+
+.addButton:hover {
+    opacity: 0.9;
+}
+
+.title {
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.subtitle {
+    margin-top: 0.25rem;
+    font-size: 0.8125rem;
+    color: var(--color-text-muted);
+}
+
+.tableContainer {
+    overflow-x: auto;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.th {
+    padding: 0.875rem 1rem;
+    text-align: left;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+    border-bottom: 1px solid var(--color-border);
+    background-color: var(--color-surface);
+}
+
+.tr {
+    border-bottom: 1px solid var(--color-border);
+}
+
+.tr:last-child {
+    border-bottom: none;
+}
+
+.td {
+    padding: 0.875rem 1rem;
+    font-size: 0.8125rem;
+}
+
+.name {
+    font-weight: 500;
+}
+
+.price {
+    font-weight: 500;
+}
+
+.category {
+    color: var(--color-text-muted);
+}
+
+.inlineInput {
+    padding: 0.375rem 0.5rem;
+    font-size: 0.8125rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    width: 100%;
+    min-width: 120px;
+}
+
+.inlineInput:focus {
+    outline: none;
+    border-color: var(--color-text);
+}
+
+.actionPreview {
+    color: var(--color-text);
+}
+
+.previewOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.previewModal {
+    background-color: var(--color-surface);
+    border-radius: var(--radius-lg);
+    width: 100%;
+    max-width: 400px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.previewHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.previewTitle {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.previewContent {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.actions {
+    display: flex;
+    gap: 0.375rem;
+}
+
+.action {
+    padding: 0.375rem 0.625rem;
+    font-size: 0.75rem;
+    color: var(--color-text);
+    background-color: transparent;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+}
+
+.actionDanger {
+    color: var(--color-text-muted);
+}
+
+.state {
+    font-size: 0.8125rem;
+    color: var(--color-text-muted);
+}

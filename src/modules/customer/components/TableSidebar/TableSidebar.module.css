@@ -1,0 +1,70 @@
+.sidebar {
+    width: var(--sidebar-width);
+    flex-shrink: 0;
+    padding: 1.25rem;
+    background-color: var(--color-surface);
+    border-left: 1px solid var(--color-border);
+    overflow-y: auto;
+}
+
+.empty {
+    font-size: 0.8125rem;
+    color: var(--color-text-muted);
+    padding-top: 2rem;
+}
+
+.title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.subtitle {
+    font-size: 0.8125rem;
+    color: var(--color-text-muted);
+    margin-bottom: 1.25rem;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8125rem;
+}
+
+.label {
+    color: var(--color-text-muted);
+}
+
+.value {
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.statusAvailable {
+    color: var(--color-text);
+}
+
+.statusOccupied {
+    color: var(--color-text-muted);
+}
+
+.statusReserved {
+    color: var(--color-text-subtle);
+}
+
+.close {
+    margin-top: 1.25rem;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 0.8125rem;
+    color: var(--color-text);
+    background-color: transparent;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+}

@@ -16,11 +16,26 @@
     "noEmit": true,
     "jsx": "react-jsx",
 
+    /* Path Aliases */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@shared/*": ["./src/shared/*"],
+      "@utils/*": ["./src/shared/utils/*"],
+      "@libs/*": ["./src/shared/libs/*"],
+      "@auth/*": ["./src/modules/auth/*"],
+      "@menu/*": ["./src/modules/menu/*"],
+      "@customer/*": ["./src/modules/customer/*"],
+      "@staff/*": ["./src/modules/staff/*"]
+    },
+
     /* Linting */
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "erasableSyntaxOnly": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitReturns": true,
+    "strict": true
   },
   "include": ["src"]
 }
